@@ -1,0 +1,23 @@
+{
+  "name": "cypress-3256",
+  "version": "1.0.0",
+  "description": "https://github.com/cypress-io/cypress/issues/3256",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinfaits/cypress-3256.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinfaits/cypress-3256/issues"
+  },
+  "homepage": "https://github.com/hinfaits/cypress-3256#readme",
+  "dependencies": {
+    "cypress": "^3.1.5",
+    "express": "^4.16.4"
+  }
+}
