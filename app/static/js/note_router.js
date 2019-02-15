@@ -13,7 +13,12 @@ APP.NoteRouter = Backbone.Router.extend({
 
   initialize: function () {
     this.collection = new APP.NoteCollection();
-    this.collection.fetch({ajaxSync: false});
+    this.collection.fetch({
+      ajaxSync: false,
+      error: function() {
+        throw new Error('This is an application exception.');
+      }
+    });
     APP.helpers.debug(this.collection);
     this.index();
     // start backbone watching url changes
