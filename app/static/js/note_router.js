@@ -16,7 +16,7 @@ APP.NoteRouter = Backbone.Router.extend({
     this.collection.fetch({
       ajaxSync: false,
       error: function() {
-        throw new Error('This is an application exception.');
+        throw new Error('This is an uncaught application exception.');
       }
     });
     APP.helpers.debug(this.collection);
