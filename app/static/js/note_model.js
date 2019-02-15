@@ -17,18 +17,6 @@ APP.NoteModel = Backbone.Model.extend({
     if (!attrs.author) errors.author = "Put your name in dumb dumb...";
     if (!_.isEmpty(errors)) return errors;
   },
-
-  // sync: function (method, model, options) {
-  //   var xhr;
-  //   xhr = Backbone.Model.prototype.sync.call(this, method, model, options)
-  //     .then(function (data) {
-  //       debugger;
-  //     }.bind(this))
-  //     .fail(function (data, status, e) {
-  //       debugger;
-  //     }.bind(this));
-  //   console.log(1);
-  // },
 });
 
 APP.NoteCollection = Backbone.Collection.extend({
@@ -36,8 +24,4 @@ APP.NoteCollection = Backbone.Collection.extend({
   // localStorage: new Backbone.LocalStorage("NoteCollection"),
   url: "http://localhost:3000/notes",
   model: APP.NoteModel,
-
-  // sync: function () {
-  //   return Backbone.sync.apply(this, arguments);
-  // }
 });
